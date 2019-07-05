@@ -1,0 +1,25 @@
+body {
+    background: url(../images/polaroid.png)
+}
+
+.jumbotron{
+    background:url(../images/train_1280x720.jpg);
+}
+
+.card-header, #addTrain{
+    background-size:cover;
+    background-color: rgba(66, 162, 206, 0.5);
+  color: inherit
+}
+
+/* #search-input {
+    width: 100%;
+} */
+
+input[type="text"] {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 18px;
+    background-size:cover;
+}

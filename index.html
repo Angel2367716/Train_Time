@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">\
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <title>Document</title>
+    <title>Train Time</title>
     <!--favicon link-->
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/train_128x128.ico" type="image/x-icon" />
     <!--bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -16,12 +17,87 @@
 
 
 </head>
+
 <body>
+    <div class="container">
+
+        <div class="jumbotron jumbotron-fluid text-center">
+            <h2>Anytime is Train Time</h2>
+        </div>
+
+        <!---current train schedule section-->
+
+        <div class="card">
+            <div class="card-header">
+                    Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency(min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" id="trainName">Trenton Express</th>
+                            <td id="trainDestination">Trenton</td>
+                            <td id="minFrequency">25</td>
+                            <td id="nextArrival">05:35 PM</td>
+                            <td id="minutesAway">10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+
+
+<br>
+
+
+        <!---add train section-->
+        <div class="card">
+            <div class="card-header">
+                    Add Train
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                            <form id="search-form">
+                                    <label for="search-input">Train name</label>
+                                    <input type="text" id="search-input"><br>
+                            </form>
+                            <form id="search-form">
+                                    <label for="search-input">Destination</label>
+                                    <input type="text" id="search-input"><br>
+                            </form>
+                            <form id="search-form">
+                                    <label for="search-input">First Train Time (HH:mm - military time)</label>
+                                    <input type="text" id="search-input"><br>
+                            </form>
+                            <form id="search-form">
+                                    <label for="search-input">Frequency (min)</label>
+                                    <input type="text" id="search-input"><br>
+                            </form>                     
+                            <input id="addTrain" type="submit">
+                        </div>
+                    </div>
+                </div>             
+        </div>
     
 
+
+
+    </div>
     <!--jQuery link-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <!---javascript link-->
     <script src="assets/javascript/app.js"></script>
 </body>
+
 </html>
