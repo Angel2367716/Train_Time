@@ -29,7 +29,7 @@
 
         <div class="card">
             <div class="card-header">
-                    Current Train Schedule
+                Current Train Schedule
             </div>
             <div class="card-body">
                 <table class="table">
@@ -44,52 +44,51 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" id="trainName">Trenton Express</th>
-                            <td id="trainDestination">Trenton</td>
-                            <td id="minFrequency">25</td>
-                            <td id="nextArrival">05:35 PM</td>
-                            <td id="minutesAway">10</td>
+                            <th scope="row" id="trainName-display">Trenton Express</th>
+                            <td id="destination-display">Trenton</td>
+                            <td id="trainTime-display">25</td>
+                            <td id="frequency-display">05:35 PM</td>
+                            <td id="minutesAway-display">10</td>
                         </tr>
                     </tbody>
                 </table>
-                
+
             </div>
         </div>
 
 
-<br>
+        <br>
 
 
         <!---add train section-->
         <div class="card">
             <div class="card-header">
-                    Add Train
+                Add Train
             </div>
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-12">
-                            <form id="search-form">
-                                    <label for="search-input">Train name</label>
-                                    <input type="text" id="search-input"><br>
-                            </form>
-                            <form id="search-form">
-                                    <label for="search-input">Destination</label>
-                                    <input type="text" id="search-input"><br>
-                            </form>
-                            <form id="search-form">
-                                    <label for="search-input">First Train Time (HH:mm - military time)</label>
-                                    <input type="text" id="search-input"><br>
-                            </form>
-                            <form id="search-form">
-                                    <label for="search-input">Frequency (min)</label>
-                                    <input type="text" id="search-input"><br>
-                            </form>                     
+                <form role="form">
+                            <div class="form-group row">                                
+                                <label for="trainName-input">Train name</label>
+                                <input class="form-control" type="text" id="trainName-input"><br>
+                            </div>
+                            <div class="form-group row">                                
+                                <label for="destination-input">Destination</label>
+                                <input class="form-control" type="text" id="destination-input"><br>
+                            </div>
+                            <div class="form-group row">                                
+                                <label for="trainTime-input">First Train Time (HH:mm - military time)</label>
+                                <input class="form-control" type="text" id="trainTime-input"><br>
+                            </div>
+                            <div class="form-group row">                               
+                                <label for="frequency-input">Frequency (min)</label>
+                                <input class="form-control" type="text" id="frequency-input"><br>
+                            </div>
                             <input id="addTrain" type="submit">
                         </div>
-                    </div>
-                </div>             
+                </form>
+            </div>
         </div>
-    
+
 
 
 
